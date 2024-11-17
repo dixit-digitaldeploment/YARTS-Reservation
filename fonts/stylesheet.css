@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-MediumItalic.woff2') format('woff2'),
+        url('Zuume-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-Bold.woff2') format('woff2'),
+        url('Zuume-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-BoldItalic.woff2') format('woff2'),
+        url('Zuume-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-Medium.woff2') format('woff2'),
+        url('Zuume-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-SemiBold.woff2') format('woff2'),
+        url('Zuume-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Zuume';
+    src: url('Zuume-SemiBoldItalic.woff2') format('woff2'),
+        url('Zuume-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
