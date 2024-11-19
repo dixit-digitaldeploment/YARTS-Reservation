@@ -72,11 +72,17 @@
     .for-desk {
         display: none;
     }
-    .innerHero .tripPlanner .search_wrap>div {
-        margin-bottom: 0px;
-    }
-    .innerHero .tripPlanner_wrap .search_wrap {
-        grid-column-gap: 0px;
+    .tripPlanner_wrap {
+        width: 90%;
+        left: 5%;
+        right: 5%;
+        overflow: hidden;
+        .tripPlanner {
+            padding: 20px;
+        }
+        .form-group {
+            width: 100%;
+        }
     }
     .innerHero {
         .fixmapAlert {
@@ -95,15 +101,8 @@
             }
         }
     }
-    .RouteWraper .leftScFtr {
-        padding-top: 0;
-    }
     .innerHero div#route_map {
         height: 250px !important;
-    }
-    .innerHero .tripPlanner_wrap .tripPlanner .nav-tabs a {
-        font-size: 21px;
-        padding: 14px 5px;
     }
     .accoRt_block .rtTitle h3 {
         align-items: flex-start;
@@ -245,42 +244,6 @@
     }
     .mt-img-wrap h3 {
         min-height: 10px;
-    }
-    .tripPlanner {
-        .nav-tabs .nav-item {
-            width: 50%;
-            a {
-                min-width: 50px;
-                font-size: 21px;
-                padding: 18px 5px;
-            }
-        }
-        .tab-content {
-            padding: 25px 10px;
-            min-height: 310px;
-        }
-        .search_wrap {
-            display: flex;
-            flex-wrap: wrap;
-            grid-gap: 0;
-            >div {
-                margin-bottom: 10px;
-                width: 100%;
-                padding: 0px 10px;
-                &.go_btn {
-                    width: 50%;
-                    .btn_sm {
-                        width: 100%;
-                    }
-                }
-            }
-            .date_ifo,
-            .time_ifo,
-            .dep_ifo,
-            .btn_sm {
-                width: 50%;
-            }
-        }
     }
     .advgb-recent-posts-block.grid-view {
         padding-left: 20px;
@@ -846,10 +809,6 @@
     .main_header .navbar-nav .dropdown-menu>li>a {}
     .main_header .navbar-nav .dropdown-menu>li {
         margin-bottom: 5px;
-    }
-    .tripPlanner_wrap {
-        width: calc(100% - 40px);
-        left: 20px;
     }
 }
 

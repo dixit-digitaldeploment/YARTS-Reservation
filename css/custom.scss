@@ -70,6 +70,9 @@ body {
     &.page-template-template-news {
         background: linear-gradient(180deg, #FFFBEF 11.27%, #E2EFFF 100%);
     }
+    &.single-post {
+        background: linear-gradient(180deg, #FFFBEF 13.55%, #E2EFFF 100%);
+    }
 }
 
 html {
@@ -1023,62 +1026,19 @@ label.title {
 
 .tripPlanner_wrap {
     position: absolute;
-    bottom: 20px;
-    width: 1300px;
-    z-index: 9;
-}
-
-.search_wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr 0.7fr 0.7fr 0.7fr 0.65fr;
-    grid-column-gap: 15px;
+    width: 540px;
+    right: 0px;
+    top: 0px;
 }
 
 .tripPlanner {
-    .nav-tabs {
-        border: 0;
-        a {
-            font-size: 26px;
-            color: $white;
-            padding: 18px 20px;
-            background: $black;
-            text-align: center;
-            border: 0;
-            border-radius: 0px !important;
-            box-shadow: none;
-            font-weight: 700;
-            min-width: 220px;
-            &:hover {
-                background: $primary;
-                color: #fff;
-            }
-            &.active {
-                background: #f5f5f5 !important;
-                color: #121212;
-            }
-            &:hover {}
-        }
-        >li {}
-    }
-    .tab-content {
-        padding: 40px 35px;
-        background: #f5f5f5;
-        label {
-            font-size: 14px;
-            font-weight: 700;
-            position: absolute;
-            top: 17px;
-            left: 15px;
-        }
-        .dep_ifo {
-            select {
-                font-size: 14px;
-                font-weight: 700;
-                padding-left: 15px;
-            }
-        }
-        @media (min-width: 1400px) {
-            height: 140px;
+    background: #B2C4C4;
+    margin-top: -1px;
+    padding: 30px 40px 40px 40px;
+    .pl-title {
+        text-align: center;
+        h2 {
+            color: $black;
         }
     }
     .form-control {
@@ -1088,7 +1048,7 @@ label.title {
         font-weight: 400;
         color: $black;
         padding-left: 62px;
-        border: 0;
+        border: 1px solid #487367;
     }
     select {
         background-image: url(../img/select-arrow-black.svg);
@@ -1099,27 +1059,30 @@ label.title {
         width: auto;
     }
     .btn_sm {
-        padding: 8px 20px;
-        min-width: 100px;
-        @include all;
-        font-size: 16px;
-        font-weight: 700;
-        text-transform: none;
-        height: 100%;
-        width: 100%;
+        display: inline-block;
     }
 }
 
+.pl-tab-content {}
+
 .search_wrap .form-group {
     position: relative;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
+    label {
+        position: absolute;
+        top: 15px;
+        left: 15px;
+    }
     .radiobuttons {
         display: flex;
         margin-top: 5px;
         margin-bottom: 10px;
     }
     .rdio label {
-        font-size: 12px;
+        font-size: 15px;
+        position: static;
+        color: $black;
+        font-weight: 700;
     }
 }
 
@@ -1132,35 +1095,26 @@ label.title {
         position: static;
     }
     label {
-        padding-left: 6px;
+        padding-left: 15px;
         cursor: pointer;
         margin-bottom: 0px !important;
         min-width: 0;
         display: inline-block;
         &:before {
-            width: 17px;
-            height: 17px;
+            width: 22px;
+            height: 22px;
             position: absolute;
             top: 3px;
             left: 0;
             content: "";
             display: inline-block;
-            border: 1px solid #d9d9d9;
+            border: 1px solid #487367;
             background: #fff;
             border-radius: 100px;
         }
     }
-    input[type="radio"]:checked+label::after {
-        content: "";
-        position: absolute;
-        top: 5px;
-        left: 2px;
-        display: inline-block;
-        font-size: 11px;
-        border-radius: 100px;
-        width: 13px;
-        height: 13px;
-        background-color: #bdce31;
+    input[type="radio"]:checked+label::before {
+        background: #487367;
     }
     input[type="radio"]:checked+label:before {}
     input[type="radio"]:checked+label::after {
@@ -1174,24 +1128,25 @@ label.title {
     }
 }
 
-.form-group.date_time {
-    max-width: 330px;
-    margin: auto;
-}
-
 .date_time_wrap {
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 24px;
     .dt_col {
         display: flex;
         align-items: flex-start;
         flex-wrap: wrap;
-        padding-right: 7px;
         margin-bottom: 25px;
         flex-direction: column;
-        width: 110px;
+        position: relative;
     }
     .btn_sm {
         margin: auto;
+    }
+    .form-control {
+        background-image: url(../img/select-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: top 20px right 15px;
     }
 }
 
@@ -1606,8 +1561,16 @@ label.title {
     text-align: left;
     font-family: "Montserrat", sans-serif;
     max-width: 800px !important;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: 700;
+    p {
+        font-size: 18px;
+        font-weight: 700;
+    }
     cite {
-        font-size: 16px !important;
+        font-size: 18px !important;
         font-weight: 700;
     }
 }
@@ -1669,6 +1632,7 @@ label.title {
     padding-bottom: 50px;
     position: relative;
     min-height: 360px;
+    background-size: cover;
     &:before {
         content: '';
         position: absolute;
@@ -2964,11 +2928,25 @@ h2+.expand_img_grid {
 //News Details
 .news_detail {
     padding-bottom: 50px;
-    .page_title {
-        padding-bottom: 30px;
+    padding-top: 50px;
+    h3 {
+        font-size: 24px;
     }
     .container {
         max-width: 900px;
+    }
+    .wp-block-quote {
+        padding-top: 10px;
+        padding-bottom: 40px;
+    }
+    .cat_date {
+        margin-bottom: 30px;
+        .category {
+            font-size: 15px;
+            font-weight: 700;
+            color: $black;
+            display: block;
+        }
     }
     .news-dt-img {
         margin-bottom: 20px;
@@ -4137,54 +4115,19 @@ body .is-layout-constrained>.wp-block-group {
 //content display blocks ends
 //Route directory
 .innerHero {
+    position: relative;
     .hr_row {
         width: 100%;
         margin: 0px;
-        background: #f7f7f7;
-        .col_left {
-            padding: 0px;
-            .hero_map {
-                >img {
-                    width: 100%;
-                }
+        .hero_map {
+            >img {
+                width: 100%;
+                height: 530px;
+                object-fit: cover;
             }
         }
         .col_right {
             padding: 0px;
-        }
-    }
-    .tripPlanner_wrap {
-        position: static;
-        width: auto;
-        .tripPlanner {
-            .nav-tabs a {
-                font-size: 24px;
-                padding: 10px 16px;
-            }
-            .nav-tabs .nav-item {
-                flex-grow: 1;
-            }
-        }
-        .search_wrap {
-            grid-template-columns: 1fr 1fr;
-            grid-row-gap: 15px;
-            grid-column-gap: 12px;
-            >div:nth-child(1),
-            >div:nth-child(2) {
-                grid-column: 1/3;
-            }
-            .sub_btn {
-                grid-column: 1/2;
-                a,
-                .btn_sm {
-                    height: 50px;
-                }
-            }
-            .date_time_wrap .dt_col {
-                width: 100%;
-                padding-right: 0px;
-                margin-bottom: 0px;
-            }
         }
     }
     .map_wrap {
@@ -4285,7 +4228,6 @@ body .is-layout-constrained>.wp-block-group {
         padding-top: 5px;
     }
     .leftScFtr {
-        padding-top: 65px;
         .s-icon {
             display: none;
         }
@@ -4317,20 +4259,6 @@ body .is-layout-constrained>.wp-block-group {
     .select2-selection__rendered,
     .select2-selection__placeholder {
         color: #000 !important;
-    }
-}
-
-.text-Holder-sr {
-    background: $blue;
-    padding: 22px;
-    margin-top: 20px;
-    display: block;
-    h4 {
-        color: #fff;
-    }
-    .btn_sm {
-        width: 100%;
-        margin-bottom: 8px;
     }
 }
 
@@ -4371,43 +4299,45 @@ body .is-layout-constrained>.wp-block-group {
 }
 
 .route-info-wrap {
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     h2 {
-        margin-bottom: 30px;
-        text-align: center;
-        color: #10204e;
+        text-align: left;
     }
-    .routeAccdn {
-        padding-top: 10px;
-    }
+    .routeAccdn {}
 }
 
 .accoRt_block {
-    margin-bottom: 10px;
+    border-bottom: 1px solid #487367;
     .rtTitle {
-        background: $lightgray;
         display: flex;
         align-items: center;
         min-height: 55px;
-        padding: 8px 15px;
+        padding: 12px 15px;
         justify-content: space-between;
         position: relative;
         cursor: pointer;
-        padding-right: 60px;
-        padding-left: 45px;
+        padding-right: 50px;
+        padding-left: 15px;
         h3 {
             margin: 0;
             display: flex;
             align-items: center;
             font-weight: 700;
-            font-size: 16px;
-            @include mont;
+            font-size: 24px;
             .rtNo {
-                margin-right: 5px;
+                margin-right: 20px;
+                width: 40px;
+                height: 42px;
+                @include all;
+                @include md {
+                    margin-right: 10px;
+                }
             }
         }
         p {
             margin: 0px;
+            font-size: 15px;
+            font-weight: 700;
         }
         .accordion_sign {
             position: absolute;
@@ -4425,16 +4355,12 @@ body .is-layout-constrained>.wp-block-group {
             }
         }
         &:hover {
-            background: $primary;
-            h3,
-            p,
-            p a {
-                color: #fff;
+            h3 {
+                color: $secondary;
+                text-decoration: underline;
             }
             .accordion_sign {
-                img {
-                    @include img-white;
-                }
+                img {}
             }
         }
     }
@@ -4501,18 +4427,20 @@ body .is-layout-constrained>.wp-block-group {
 
 .accoRtpanel {
     display: none;
-    padding: 20px;
-    background: $lightgray;
-    .btn_sm {}
+    padding: 20px 15px;
     .document_era {
         padding-bottom: 10px;
     }
 }
 
-.destination_info {
-    padding-top: 15px;
+.destination_info,
+.connections {
+    padding-top: 0px;
     h4 {
         @include mont;
+        font-size: 18px;
+        color: $black;
+        text-transform: none;
     }
 }
 

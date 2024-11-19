@@ -63,11 +63,17 @@
   .for-desk {
     display: none;
   }
-  .innerHero .tripPlanner .search_wrap > div {
-    margin-bottom: 0px;
+  .tripPlanner_wrap {
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    overflow: hidden;
   }
-  .innerHero .tripPlanner_wrap .search_wrap {
-    grid-column-gap: 0px;
+  .tripPlanner_wrap .tripPlanner {
+    padding: 20px;
+  }
+  .tripPlanner_wrap .form-group {
+    width: 100%;
   }
   .innerHero .fixmapAlert {
     left: 0%;
@@ -84,15 +90,8 @@
   .innerHero .fixmapAlert a img {
     max-width: 18px;
   }
-  .RouteWraper .leftScFtr {
-    padding-top: 0;
-  }
   .innerHero div#route_map {
     height: 250px !important;
-  }
-  .innerHero .tripPlanner_wrap .tripPlanner .nav-tabs a {
-    font-size: 21px;
-    padding: 14px 5px;
   }
   .accoRt_block .rtTitle h3 {
     align-items: flex-start;
@@ -231,40 +230,6 @@
   }
   .mt-img-wrap h3 {
     min-height: 10px;
-  }
-  .tripPlanner .nav-tabs .nav-item {
-    width: 50%;
-  }
-  .tripPlanner .nav-tabs .nav-item a {
-    min-width: 50px;
-    font-size: 21px;
-    padding: 18px 5px;
-  }
-  .tripPlanner .tab-content {
-    padding: 25px 10px;
-    min-height: 310px;
-  }
-  .tripPlanner .search_wrap {
-    display: flex;
-    flex-wrap: wrap;
-    grid-gap: 0;
-  }
-  .tripPlanner .search_wrap > div {
-    margin-bottom: 10px;
-    width: 100%;
-    padding: 0px 10px;
-  }
-  .tripPlanner .search_wrap > div.go_btn {
-    width: 50%;
-  }
-  .tripPlanner .search_wrap > div.go_btn .btn_sm {
-    width: 100%;
-  }
-  .tripPlanner .search_wrap .date_ifo,
-  .tripPlanner .search_wrap .time_ifo,
-  .tripPlanner .search_wrap .dep_ifo,
-  .tripPlanner .search_wrap .btn_sm {
-    width: 50%;
   }
   .advgb-recent-posts-block.grid-view {
     padding-left: 20px;
@@ -802,10 +767,6 @@
   }
   .main_header .navbar-nav .dropdown-menu > li {
     margin-bottom: 5px;
-  }
-  .tripPlanner_wrap {
-    width: calc(100% - 40px);
-    left: 20px;
   }
 }
 @media (min-width: 1500px) {

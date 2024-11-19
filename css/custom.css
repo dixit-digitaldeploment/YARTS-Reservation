@@ -59,6 +59,9 @@ body.search-results {
 body.page-template-template-news {
   background: linear-gradient(180deg, #FFFBEF 11.27%, #E2EFFF 100%);
 }
+body.single-post {
+  background: linear-gradient(180deg, #FFFBEF 13.55%, #E2EFFF 100%);
+}
 
 html {
   font-size: 100%;
@@ -979,60 +982,21 @@ label.title {
 
 .tripPlanner_wrap {
   position: absolute;
-  bottom: 20px;
-  width: 1300px;
-  z-index: 9;
+  width: 540px;
+  right: 0px;
+  top: 0px;
 }
 
-.search_wrap {
-  display: grid;
-  grid-template-columns: 1fr 1fr 0.7fr 0.7fr 0.7fr 0.65fr;
-  grid-column-gap: 15px;
+.tripPlanner {
+  background: #B2C4C4;
+  margin-top: -1px;
+  padding: 30px 40px 40px 40px;
 }
-
-.tripPlanner .nav-tabs {
-  border: 0;
-}
-.tripPlanner .nav-tabs a {
-  font-size: 26px;
-  color: #ffffff;
-  padding: 18px 20px;
-  background: #000000;
+.tripPlanner .pl-title {
   text-align: center;
-  border: 0;
-  border-radius: 0px !important;
-  box-shadow: none;
-  font-weight: 700;
-  min-width: 220px;
 }
-.tripPlanner .nav-tabs a:hover {
-  background: #1C2E5B;
-  color: #fff;
-}
-.tripPlanner .nav-tabs a.active {
-  background: #f5f5f5 !important;
-  color: #121212;
-}
-.tripPlanner .tab-content {
-  padding: 40px 35px;
-  background: #f5f5f5;
-}
-.tripPlanner .tab-content label {
-  font-size: 14px;
-  font-weight: 700;
-  position: absolute;
-  top: 17px;
-  left: 15px;
-}
-.tripPlanner .tab-content .dep_ifo select {
-  font-size: 14px;
-  font-weight: 700;
-  padding-left: 15px;
-}
-@media (min-width: 1400px) {
-  .tripPlanner .tab-content {
-    height: 140px;
-  }
+.tripPlanner .pl-title h2 {
+  color: #000000;
 }
 .tripPlanner .form-control {
   background-color: #fff;
@@ -1041,7 +1005,7 @@ label.title {
   font-weight: 400;
   color: #000000;
   padding-left: 62px;
-  border: 0;
+  border: 1px solid #487367;
 }
 .tripPlanner select {
   background-image: url(../img/select-arrow-black.svg);
@@ -1052,21 +1016,17 @@ label.title {
   width: auto;
 }
 .tripPlanner .btn_sm {
-  padding: 8px 20px;
-  min-width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 16px;
-  font-weight: 700;
-  text-transform: none;
-  height: 100%;
-  width: 100%;
+  display: inline-block;
 }
 
 .search_wrap .form-group {
   position: relative;
-  margin-bottom: 0px;
+  margin-bottom: 20px;
+}
+.search_wrap .form-group label {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
 .search_wrap .form-group .radiobuttons {
   display: flex;
@@ -1074,7 +1034,10 @@ label.title {
   margin-bottom: 10px;
 }
 .search_wrap .form-group .rdio label {
-  font-size: 12px;
+  font-size: 15px;
+  position: static;
+  color: #000000;
+  font-weight: 700;
 }
 
 .rdio {
@@ -1087,35 +1050,26 @@ label.title {
   position: static;
 }
 .rdio label {
-  padding-left: 6px;
+  padding-left: 15px;
   cursor: pointer;
   margin-bottom: 0px !important;
   min-width: 0;
   display: inline-block;
 }
 .rdio label:before {
-  width: 17px;
-  height: 17px;
+  width: 22px;
+  height: 22px;
   position: absolute;
   top: 3px;
   left: 0;
   content: "";
   display: inline-block;
-  border: 1px solid #d9d9d9;
+  border: 1px solid #487367;
   background: #fff;
   border-radius: 100px;
 }
-.rdio input[type=radio]:checked + label::after {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 2px;
-  display: inline-block;
-  font-size: 11px;
-  border-radius: 100px;
-  width: 13px;
-  height: 13px;
-  background-color: #bdce31;
+.rdio input[type=radio]:checked + label::before {
+  background: #487367;
 }
 .rdio input[type=radio]:checked + label::after {
   background-color: #bdce31;
@@ -1127,25 +1081,26 @@ label.title {
   background-color: #fbc52d;
 }
 
-.form-group.date_time {
-  max-width: 330px;
-  margin: auto;
-}
-
 .date_time_wrap {
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 24px;
 }
 .date_time_wrap .dt_col {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
-  padding-right: 7px;
   margin-bottom: 25px;
   flex-direction: column;
-  width: 110px;
+  position: relative;
 }
 .date_time_wrap .btn_sm {
   margin: auto;
+}
+.date_time_wrap .form-control {
+  background-image: url(../img/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: top 20px right 15px;
 }
 
 .alertlists .alert-title {
@@ -1525,9 +1480,17 @@ label.title {
   text-align: left;
   font-family: "Montserrat", sans-serif;
   max-width: 800px !important;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 18px;
+  font-weight: 700;
+}
+.wp-block-quote p {
+  font-size: 18px;
+  font-weight: 700;
 }
 .wp-block-quote cite {
-  font-size: 16px !important;
+  font-size: 18px !important;
   font-weight: 700;
 }
 
@@ -1586,6 +1549,7 @@ label.title {
   padding-bottom: 50px;
   position: relative;
   min-height: 360px;
+  background-size: cover;
 }
 .page_title:before {
   content: "";
@@ -2766,12 +2730,26 @@ h2 + .expand_img_grid {
 
 .news_detail {
   padding-bottom: 50px;
+  padding-top: 50px;
 }
-.news_detail .page_title {
-  padding-bottom: 30px;
+.news_detail h3 {
+  font-size: 24px;
 }
 .news_detail .container {
   max-width: 900px;
+}
+.news_detail .wp-block-quote {
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+.news_detail .cat_date {
+  margin-bottom: 30px;
+}
+.news_detail .cat_date .category {
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  display: block;
 }
 .news_detail .news-dt-img {
   margin-bottom: 20px;
@@ -3868,6 +3846,7 @@ body .is-layout-constrained > .wp-block-group {
 
 .innerHero {
   position: relative;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -3876,48 +3855,15 @@ body .is-layout-constrained > .wp-block-group {
 .innerHero .hr_row {
   width: 100%;
   margin: 0px;
-  background: #f7f7f7;
 }
-.innerHero .hr_row .col_left {
-  padding: 0px;
-}
-.innerHero .hr_row .col_left .hero_map > img {
+.innerHero .hr_row .hero_map > img {
   width: 100%;
+  height: 530px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .innerHero .hr_row .col_right {
   padding: 0px;
-}
-.innerHero .tripPlanner_wrap {
-  position: static;
-  width: auto;
-}
-.innerHero .tripPlanner_wrap .tripPlanner .nav-tabs a {
-  font-size: 24px;
-  padding: 10px 16px;
-}
-.innerHero .tripPlanner_wrap .tripPlanner .nav-tabs .nav-item {
-  flex-grow: 1;
-}
-.innerHero .tripPlanner_wrap .search_wrap {
-  grid-template-columns: 1fr 1fr;
-  grid-row-gap: 15px;
-  grid-column-gap: 12px;
-}
-.innerHero .tripPlanner_wrap .search_wrap > div:nth-child(1),
-.innerHero .tripPlanner_wrap .search_wrap > div:nth-child(2) {
-  grid-column: 1/3;
-}
-.innerHero .tripPlanner_wrap .search_wrap .sub_btn {
-  grid-column: 1/2;
-}
-.innerHero .tripPlanner_wrap .search_wrap .sub_btn a,
-.innerHero .tripPlanner_wrap .search_wrap .sub_btn .btn_sm {
-  height: 50px;
-}
-.innerHero .tripPlanner_wrap .search_wrap .date_time_wrap .dt_col {
-  width: 100%;
-  padding-right: 0px;
-  margin-bottom: 0px;
 }
 .innerHero .map_wrap {
   width: 100%;
@@ -4012,9 +3958,6 @@ body .is-layout-constrained > .wp-block-group {
   margin-bottom: 30px;
   padding-top: 5px;
 }
-.RouteWraper .leftScFtr {
-  padding-top: 65px;
-}
 .RouteWraper .leftScFtr .s-icon {
   display: none;
 }
@@ -4045,20 +3988,6 @@ body .is-layout-constrained > .wp-block-group {
 .RouteWraper .select2-selection__rendered,
 .RouteWraper .select2-selection__placeholder {
   color: #000 !important;
-}
-
-.text-Holder-sr {
-  background: #004B8F;
-  padding: 22px;
-  margin-top: 20px;
-  display: block;
-}
-.text-Holder-sr h4 {
-  color: #fff;
-}
-.text-Holder-sr .btn_sm {
-  width: 100%;
-  margin-bottom: 8px;
 }
 
 .checkbox-custom {
@@ -4098,45 +4027,49 @@ body .is-layout-constrained > .wp-block-group {
 }
 
 .route-info-wrap {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .route-info-wrap h2 {
-  margin-bottom: 30px;
-  text-align: center;
-  color: #10204e;
+  text-align: left;
 }
-.route-info-wrap .routeAccdn {
-  padding-top: 10px;
-}
-
 .accoRt_block {
-  margin-bottom: 10px;
+  border-bottom: 1px solid #487367;
 }
 .accoRt_block .rtTitle {
-  background: #F4F4F4;
   display: flex;
   align-items: center;
   min-height: 55px;
-  padding: 8px 15px;
+  padding: 12px 15px;
   justify-content: space-between;
   position: relative;
   cursor: pointer;
-  padding-right: 60px;
-  padding-left: 45px;
+  padding-right: 50px;
+  padding-left: 15px;
 }
 .accoRt_block .rtTitle h3 {
   margin: 0;
   display: flex;
   align-items: center;
   font-weight: 700;
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
 }
 .accoRt_block .rtTitle h3 .rtNo {
-  margin-right: 5px;
+  margin-right: 20px;
+  width: 40px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .accoRt_block .rtTitle h3 .rtNo {
+    margin-right: 10px;
+  }
 }
 .accoRt_block .rtTitle p {
   margin: 0px;
+  font-size: 15px;
+  font-weight: 700;
 }
 .accoRt_block .rtTitle .accordion_sign {
   position: absolute;
@@ -4149,16 +4082,9 @@ body .is-layout-constrained > .wp-block-group {
 .accoRt_block .rtTitle.active .accordion_sign img {
   transform: rotate(180deg);
 }
-.accoRt_block .rtTitle:hover {
-  background: #1C2E5B;
-}
-.accoRt_block .rtTitle:hover h3,
-.accoRt_block .rtTitle:hover p,
-.accoRt_block .rtTitle:hover p a {
-  color: #fff;
-}
-.accoRt_block .rtTitle:hover .accordion_sign img {
-  filter: brightness(0) invert(1);
+.accoRt_block .rtTitle:hover h3 {
+  color: #334731;
+  text-decoration: underline;
 }
 .accoRt_block .rtTitleWrap {
   display: flex;
@@ -4224,18 +4150,22 @@ body .is-layout-constrained > .wp-block-group {
 
 .accoRtpanel {
   display: none;
-  padding: 20px;
-  background: #F4F4F4;
+  padding: 20px 15px;
 }
 .accoRtpanel .document_era {
   padding-bottom: 10px;
 }
 
-.destination_info {
-  padding-top: 15px;
+.destination_info,
+.connections {
+  padding-top: 0px;
 }
-.destination_info h4 {
+.destination_info h4,
+.connections h4 {
   font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  color: #000000;
+  text-transform: none;
 }
 
 .centerInfo {
