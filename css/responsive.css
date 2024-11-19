@@ -148,9 +148,6 @@
   .slider_info {
     padding-top: 20px;
   }
-  .howto .container {
-    padding: 0px;
-  }
   .contact_wraper .contact-row .ct_right {
     padding-right: 0px;
   }
@@ -346,7 +343,7 @@
   }
   .filterWrap {
     max-width: 100%;
-    padding-left: 0px;
+    padding-left: 0px !important;
   }
   .innerHero .alert {
     transform: none;

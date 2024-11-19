@@ -7,11 +7,11 @@ $('.owl-general .owl-carousel').owlCarousel({
 	autoplay:true,
     margin: 10,
     nav: true,
-	 autoWidth:true,
-	 items: 2,
+	 autoWidth:false,
+	 items: 1,
     navText: [
-        '<img src="/img/slider-arrow.svg">',
-        '<img src="/img/slider-arrow.svg">'
+        '<img src="/img/arrow_forward.svg">',
+        '<img src="/img/arrow_forward.svg">'
     ],
     navContainer: '.owl-general .custom-nav',
     /*responsive:{
@@ -28,60 +28,10 @@ $('.owl-general .owl-carousel').owlCarousel({
     }*/
 });
 
-$('.slider_area  .owl-carousel').owlCarousel({
 
-    loop: true,
-	dots:true,
-	autoplay:false,
-    margin: 10,
-    nav: false,
-	items: 3,
-    navText: [
-        '<img src="/img/arrow-back-red.svg">',
-        '<img src="/img/arrow-back-red.svg">'
-    ],
-    navContainer: '.LatestNews    .nav-custom',
-  responsive:{
-        0:{
-            items: 1
-        },
-        600:{
-            items: 2
-        },
-        1000:{
-            items: 3,
-			 
-        }
-    }
-});
 	
 	
-	$('.logo_slider  .owl-carousel').owlCarousel({
-
-    loop: true,
-	dots:true,
-	autoplay:false,
-    margin: 10,
-    nav: false,
-	items: 3,
-    navText: [
-        '<img src="/img/arrow-back-red.svg">',
-        '<img src="/img/arrow-back-red.svg">'
-    ],
-    navContainer: '.LatestNews    .nav-custom',
-  responsive:{
-        0:{
-            items: 2
-        },
-        600:{
-            items: 2
-        },
-        1000:{
-            items: 5,
-			 
-        }
-    }
-});
+	
 	
 
 });
