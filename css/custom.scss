@@ -73,6 +73,9 @@ body {
     &.single-post {
         background: linear-gradient(180deg, #FFFBEF 13.55%, #E2EFFF 100%);
     }
+    &.body_trip_result {
+        background: linear-gradient(180deg, #FFFBEF 0%, #E2EFFF 100%);
+    }
 }
 
 html {
@@ -349,7 +352,7 @@ footer .container-fluid {
 }
 
 .container {
-    max-width: 1300px;
+    max-width: 1200px;
 }
 
 img {
@@ -4441,6 +4444,92 @@ body .is-layout-constrained>.wp-block-group {
         font-size: 18px;
         color: $black;
         text-transform: none;
+    }
+}
+
+//Trip Result
+.trip_results {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    .rt_table {
+        border-radius: 8px;
+        background: $lightgray;
+        border: 1px solid #C3C3C3;
+        padding: 15px;
+        .table-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            margin-bottom: 10px;
+            .table-col {
+                display: flex;
+                .table_th {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $primary;
+                    margin-right: 20px;
+                }
+                .table_td {
+                    font-size: 15px;
+                    font-weight: 700;
+                    color: $black;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0px;
+            }
+            @include md {
+                grid-template-columns: auto;
+                .table-col {
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+.modify {
+    padding-top: 12px;
+    a {
+        font-size: 16px;
+        color: $secondary;
+        img {
+            margin-right: 6px;
+        }
+    }
+}
+
+.trip_suggest {
+    padding-top: 30px;
+    table {
+        background: $lightgray;
+        width: 100%;
+        margin-bottom: 20px;
+        th {
+            font-size: 15px;
+            font-weight: 700;
+            color: $primary;
+            padding: 10px;
+            padding-bottom: 0px;
+        }
+        td {
+            padding: 5px 10px;
+            font-size: 15px;
+            font-weight: normal;
+        }
+        .rt_no {
+            margin-right: 6px;
+            width: 40px;
+            height: 42px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: 700;
+            @include zume
+        }
+    }
+    .rt_wrap {
+        display: flex;
     }
 }
 
