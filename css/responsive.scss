@@ -50,9 +50,6 @@
     .wp-block-spacer.space-100 {
         height: 10px !important;
     }
-    .list_addr {
-        padding-top: 20px;
-    }
     .main_wrapper .wp-block-group .img_text_card_row {
         margin-left: -15px;
         margin-right: -15px;
@@ -65,9 +62,6 @@
     .wp-block-table th,
     .wp-block-advgb-table th {
         font-size: 16px;
-    }
-    .main_wrapper.watermark::after {
-        display: none;
     }
     .faq_main .search-filter-title {
         grid-template-columns: auto;
@@ -121,9 +115,6 @@
     .rt-modal .rt-time {
         min-width: 70px;
         font-size: 14px;
-    }
-    .page_title h1 {
-        font-size: 26px;
     }
     .page_title.resut_title {
         padding-top: 30px;
@@ -226,15 +217,6 @@
     }
     .back_next_posts .prev_link {
         position: static;
-    }
-    .page-id-30676 .table-wrapper {
-        table {
-            min-width: 600px;
-        }
-    }
-    .advgb-tabs-wrapper ul.advgb-tabs-panel li.advgb-tab.advgb-tab.advgb-tab-active {
-        border-right: 1px solid #B1ADAD !important;
-        border-left: 1px solid #B1ADAD !important;
     }
     .main_wrapper .advgb-tabs-wrapper.advgb-tab-horz-desktop ul.advgb-tabs-panel {
         flex-wrap: wrap;
@@ -836,9 +818,7 @@
         max-width: 100%;
         width: 100%;
     }
-    .main_wrapper {
-        padding-top: 75px;
-    }
+    .main_wrapper {}
     .plus-minus::after {}
     .main_header .plus-minus {
         right: 10px;
