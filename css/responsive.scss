@@ -107,6 +107,20 @@
     .accoRt_block .rtTitle h3 {
         align-items: flex-start;
     }
+    .general-tabs {
+        .nav-tabs {
+            .nav-item {
+                width: 100%;
+                padding: 0px 10px;
+                margin-right: 0px;
+                a {
+                    font-size: 22px;
+                    padding: 6px;
+                    min-height: 10px;
+                }
+            }
+        }
+    }
     .advgb-tabs-wrapper.advgb-tab-vert-desktop div.advgb-tab-body {
         padding-left: 0 !important;
         padding-top: 10px;
@@ -318,30 +332,6 @@
     .acco_panel {
         padding: 30px;
     }
-    .general-tabs .nav-tabs .nav-item a {
-        font-size: 16px;
-    }
-    .general-tabs {
-        padding-top: 10px;
-    }
-    .general-tabs .nav-tabs {
-        li {
-            width: 100%;
-        }
-    }
-    .general-tabs .tab-content {
-        padding-left: 15px;
-        padding-right: 15px;
-        .container {
-            padding: 0px;
-        }
-    }
-    .main-tabs .nav-tabs .nav-item {
-        width: 100%;
-        a {
-            width: 100%;
-        }
-    }
     .main_acco_title .acco_title_info {
         padding-left: 15px;
         padding-right: 15px;
@@ -362,10 +352,12 @@
     .destination-info .input-group-one {
         flex: auto;
         width: 100%;
+        max-width: 100%;
     }
-    .destination-info .to-text {
+    .destination-info .switch {
         width: 100%;
         text-align: center;
+        margin-bottom: 10px;
     }
     .route-detail-info .container-fluid {
         padding-left: 15px;
@@ -547,9 +539,17 @@
         padding-left: 20px;
         padding-right: 20px;
     }
-    .general-tabs .tab-content {
-        padding-left: 15px;
-        padding-right: 15px;
+    .general-tabs {
+        .tab-content {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .nav-tabs .nav-item a {
+            min-width: 230px;
+        }
+        .table-row {
+            grid-template-columns: 250px 250px auto;
+        }
     }
     .advgb-recent-posts-block.grid-view .advgb-recent-posts {
         grid-template-columns: 1fr 1fr !important;
