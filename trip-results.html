@@ -201,131 +201,485 @@
             </div>
         </div>
 
-    </div>
-    <footer class="footer ">
-        <div class="footer-content">
-            <div class="container-fluid ">
-                <div class="footer-row row ">
-                    <div class="foot_col col1 ">
-                        <div class="foo_info">
-                            <p>
-                                <a href="#"><img src="img/location_on.svg" alt="location_on"> 357 W 18th St, <br> Merced, CA 95340 </a>
-                            </p>
-                            <p>
-                                <a href="#"><img src="img/call.svg" alt="location_on"> (877) 989-2787</a>
-                            </p>
-                            <p>
-                                <a href="#"><img src="img/mail.svg" alt="location_on"> tickets@yarts.com</a>
-                            </p>
+        <a href="#" class="btn_sm" data-toggle="modal" data-target="#estimate-modal">Estimate your trip</a>
+        <p>
+            this is for another page popup
+        </p>
+
+        <a href="#" class="btn_sm" data-toggle="modal" data-target="#modal-result">Trip Results Popup</a>
+
+        <div class="modal modal-result" id="modal-result">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+
+
+
+                    <button type="button" class="close" data-dismiss="modal"> <img src="img/close-icon.svg " alt="close"> </button>
+                    <div class="modal-body trip_results">
+                        <h2 class="h1">Trip Results</h2>
+                        <div class="rt_table">
+                            <div class="table-row ">
+                                <div class="table-col ">
+                                    <div class="table_th">From</div>
+                                    <div class="table_td">Merced Transpo</div>
+                                </div>
+                                <div class="table-col ">
+                                    <div class="table_th">To</div>
+                                    <div class="table_td">Yosemite Village</div>
+                                </div>
+                            </div>
+                            <div class="table-row ">
+                                <div class="table-col ">
+                                    <div class="table_th">Date</div>
+                                    <div class="table_td">11/13/24</div>
+                                </div>
+                                <div class="table-col ">
+                                    <div class="table_th">Time</div>
+                                    <div class="table_td">4:45AM</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modify">
+                            <a href="#"> <img src="img/refresh.svg" alt="refresh">Modify My Trip </a>
+                        </div>
+                        <div class="trip_suggest">
+                            <div class="top-Title text-left ">
+                                <h2>
+                                    Suggested Trips
+                                </h2>
+                            </div>
+                            <table class="ts_table">
+                                <thead>
+                                    <tr>
+                                        <th>Itinerary</th>
+                                        <th>Route</th>
+                                        <th>Duration</th>
+                                        <th>Departure</th>
+                                        <th>Arrival</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="rt_wrap"><span class="rt_no" style="background: #516687;color: #fff;">140</span></div>
+                                        </td>
+                                        <td>2 hr 45 min</td>
+                                        <td><strong>Merced Transpo</strong> <br>4:45AM</td>
+                                        <td><strong>Merced Transpo</strong> <br>4:45AM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            <table class="ts_table">
+                                <thead>
+                                    <tr>
+                                        <th>Itinerary</th>
+                                        <th>Route</th>
+                                        <th>Duration</th>
+                                        <th>Departure</th>
+                                        <th>Arrival</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>
+                                            <div class="rt_wrap"><span class="rt_no" style="background: #516687;color: #fff;">140</span> <span class="rt_no" style="background: #E6B724;color: #000;">140</span></div>
+                                        </td>
+                                        <td>2 hr 45 min</td>
+                                        <td><strong>Merced Transpo</strong> <br>4:45AM</td>
+                                        <td><strong>Merced Transpo</strong> <br>4:45AM</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
-                    <div class="foot_col col2   ">
-                        <div class="foot_logo ">
-                            <img src="img/logo.svg " alt="logo ">
-                        </div>
-                        <div class="foot_media ">
-                            <ul>
-                                <li>
-                                    <a href=""><img src="img/Facebook.svg" alt=""> </a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/Instagram.svg" alt=""> </a>
-                                </li>
-                                <li>
-                                    <a href=""><img src="img/twitter.svg" alt=""> </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="foot_col col3  ">
-                        <div class="footmenu ">
-                            <h3>Quick Links</h3>
-                            <ul class=" ">
-                                <li> <a href="# ">Do Business with YARTS</a> </li>
-                                <li> <a href="# ">Title VI Policy</a></li>
-                                <li> <a href="# ">Developers GTFS Data </a></li>
-                                <li> <a href="# ">Media Kit</a></li>
-                                <li> <a href="# ">Contact Us</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="copyright ">
-                    <ul>
-                        <li><a href="#">Site map</a></li>
-                        <li><a href="#">Site Policy</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                    </ul>
+
+
                 </div>
             </div>
+
+
         </div>
-    </footer>
-    <script src="js/jquery.js"></script>
-    <script src="js/popper.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/expand.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/owlmain.js"></script>
-    <script>
-        $(document).on("scroll", function() {
-            if ($(document).scrollTop() > 0) {
-                $(".main_header").addClass("shrink");
 
-            } else {
-                $(".main_header").removeClass("shrink");
 
-            }
-        });
-    </script>
-    <script>
-        (function($) {
-            /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
 
-            $('.acc__main .acc__title').click(function(j) {
-                var dropDown = $(this).closest('.acc__card').find('.acc__panel');
+        <div class="modal modal-estimate" id="estimate-modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
 
-                $(this).closest('.acc__main').find('.acc__panel').not(dropDown).slideUp();
 
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
+
+
+                    <button type="button" class="close" data-dismiss="modal"> <img src="img/close-icon.svg " alt="close"> </button>
+
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <h2>Estimate your TRIP</h2>
+                        <p>
+                            Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs.
+                        </p>
+                        <div class="from_to_type">
+                            <div class="form-group">
+                                <label for="from" class="title">From:</label>
+                                <select class="form-control" id="from">
+                            <option>Select Origin</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="from" class="title">To:</label>
+                                <select class="form-control" id="from">
+                            <option>Select Destination</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="from" class="title">Ticket Type:</label>
+                                <select class="form-control" id="from">
+                            <option>One Way</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            </select>
+                            </div>
+
+                        </div>
+                        <div class="select_travel">
+                            <label for="" class="title">Select Who is Travelling:</label>
+                            <div class="st_row">
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Adult
+                                            <span>18 years old and over</span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Child (Discounted)
+                                            <span>6-17 years old </span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Free Child
+                                            <span>Children 0-5 years old</span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Senior
+                                            <span>62 years and older w/ID </span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Child w/Paid Fare
+                                            <span>Free Child 6-12 years old </span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="st_col">
+                                    <div class="st_left">
+                                        <p>
+                                            Reduced Fare
+                                            <span>Military/Disability w/ID</span>
+                                        </p>
+                                    </div>
+                                    <div class="st_right">
+                                        <div class="input-group">
+
+                                            <input type="number" class="form-control text-center quantity-input" value="0" min="0">
+                                            <div class="gp-wrap">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text decrease-btn"> <img src="img/up-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                                <div class="input-group-append">
+                                                    <span class="input-group-text increase-btn"> <img src="img/down-arrow-dark-green.svg" alt="arrow"> </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+                            </div>
+                        </div>
+
+                        <div class="total_info">
+                            <h3>Total</h3>
+                            <ul>
+                                <li>Tickets <span>$0.00</span></li>
+                                <li>Transaction Costs* <span>$0.00</span></li>
+                                <li>Reservation Fees* <span>$0.00</span></li>
+                                <li><strong>Total</strong> <span><strong>$0.00</span></strong>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="para">
+                            <p>
+                                *Welcome to the Lorem Ipsum Generator Pro, the ultimate source of placeholder text for all your design needs. Whether you're creating a website, designing a brochure, or crafting the next great novel.<a href="#"> Hyperlink</a>
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <footer class="footer ">
+            <div class="footer-content">
+                <div class="container-fluid ">
+                    <div class="footer-row row ">
+                        <div class="foot_col col1 ">
+                            <div class="foo_info">
+                                <p>
+                                    <a href="#"><img src="img/location_on.svg" alt="location_on"> 357 W 18th St, <br> Merced, CA 95340 </a>
+                                </p>
+                                <p>
+                                    <a href="#"><img src="img/call.svg" alt="location_on"> (877) 989-2787</a>
+                                </p>
+                                <p>
+                                    <a href="#"><img src="img/mail.svg" alt="location_on"> tickets@yarts.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="foot_col col2   ">
+                            <div class="foot_logo ">
+                                <img src="img/logo.svg " alt="logo ">
+                            </div>
+                            <div class="foot_media ">
+                                <ul>
+                                    <li>
+                                        <a href=""><img src="img/Facebook.svg" alt=""> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/Instagram.svg" alt=""> </a>
+                                    </li>
+                                    <li>
+                                        <a href=""><img src="img/twitter.svg" alt=""> </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="foot_col col3  ">
+                            <div class="footmenu ">
+                                <h3>Quick Links</h3>
+                                <ul class=" ">
+                                    <li> <a href="# ">Do Business with YARTS</a> </li>
+                                    <li> <a href="# ">Title VI Policy</a></li>
+                                    <li> <a href="# ">Developers GTFS Data </a></li>
+                                    <li> <a href="# ">Media Kit</a></li>
+                                    <li> <a href="# ">Contact Us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright ">
+                        <ul>
+                            <li><a href="#">Site map</a></li>
+                            <li><a href="#">Site Policy</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="js/jquery.js"></script>
+        <script src="js/popper.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/expand.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/owlmain.js"></script>
+        <script>
+            $(document).on("scroll", function() {
+                if ($(document).scrollTop() > 0) {
+                    $(".main_header").addClass("shrink");
+
                 } else {
-                    $(this).closest('.acc__main').find('.acc__title.active').removeClass('active');
-                    $(this).addClass('active');
+                    $(".main_header").removeClass("shrink");
+
                 }
-
-                dropDown.stop(false, true).slideToggle();
-
-                j.preventDefault();
             });
-        })(jQuery);
-    </script>
-    <script>
-        (function($) {
-            /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
-            $('.routeAccdn .rtTitle').click(function(j) {
-                var dropDown = $(this).closest('.accoRt_block').find('.accoRtpanel');
-                $(this).closest('.routeAccdn').find('.accoRtpanel').not(dropDown).slideUp();
+        </script>
+        <script>
+            (function($) {
+                /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
 
-                if ($(this).hasClass('active')) {
-                    $(this).removeClass('active');
-                } else {
-                    $(this).closest('.routeAccdn').find('.rtTitle.active').removeClass('active');
-                    $(this).addClass('active');
-                }
+                $('.acc__main .acc__title').click(function(j) {
+                    var dropDown = $(this).closest('.acc__card').find('.acc__panel');
 
-                dropDown.stop(false, true).slideToggle();
+                    $(this).closest('.acc__main').find('.acc__panel').not(dropDown).slideUp();
 
-                j.preventDefault();
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                    } else {
+                        $(this).closest('.acc__main').find('.acc__title.active').removeClass('active');
+                        $(this).addClass('active');
+                    }
+
+                    dropDown.stop(false, true).slideToggle();
+
+                    j.preventDefault();
+                });
+            })(jQuery);
+        </script>
+        <script>
+            (function($) {
+                /* $('.accordion_event > li:eq(0) .acco_title').addClass('active').next().slideDown();*/
+                $('.routeAccdn .rtTitle').click(function(j) {
+                    var dropDown = $(this).closest('.accoRt_block').find('.accoRtpanel');
+                    $(this).closest('.routeAccdn').find('.accoRtpanel').not(dropDown).slideUp();
+
+                    if ($(this).hasClass('active')) {
+                        $(this).removeClass('active');
+                    } else {
+                        $(this).closest('.routeAccdn').find('.rtTitle.active').removeClass('active');
+                        $(this).addClass('active');
+                    }
+
+                    dropDown.stop(false, true).slideToggle();
+
+                    j.preventDefault();
+                });
+
+                $('.routeAccdn .rtTitle .btn_primary').click(function(j) {
+                    $('.accoRtpanel').addClass('hiden');
+                });
+
+
+
+            })(jQuery);
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const decreaseBtns = document.querySelectorAll(".decrease-btn");
+                const increaseBtns = document.querySelectorAll(".increase-btn");
+                const quantityInputs = document.querySelectorAll(".quantity-input");
+
+                // Handle increase
+                increaseBtns.forEach(function(btn) {
+                    btn.addEventListener("click", function() {
+                        const input = btn.closest(".input-group").querySelector(".quantity-input");
+                        input.value = parseInt(input.value) + 1;
+                    });
+                });
+
+                // Handle decrease
+                decreaseBtns.forEach(function(btn) {
+                    btn.addEventListener("click", function() {
+                        const input = btn.closest(".input-group").querySelector(".quantity-input");
+                        if (parseInt(input.value) > parseInt(input.min)) {
+                            input.value = parseInt(input.value) - 1;
+                        }
+                    });
+                });
             });
-
-            $('.routeAccdn .rtTitle .btn_primary').click(function(j) {
-                $('.accoRtpanel').addClass('hiden');
-            });
-
-
-
-        })(jQuery);
-    </script>
+        </script>
 </body>
 
 </html>
