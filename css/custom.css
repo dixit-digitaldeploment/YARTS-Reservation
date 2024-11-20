@@ -65,6 +65,9 @@ body.single-post {
 body.body_trip_result {
   background: linear-gradient(180deg, #FFFBEF 0%, #E2EFFF 100%);
 }
+body.page-template-template-alerts {
+  background: linear-gradient(180deg, #FFFBEF 13.84%, #E2EFFF 100%);
+}
 
 html {
   font-size: 100%;
@@ -187,17 +190,18 @@ strong {
 }
 
 .link {
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 18px;
+  font-weight: 700;
   display: flex;
   align-items: center;
+  color: #334731;
 }
 .link img {
   max-width: 18px;
   margin-left: 6px;
 }
 .link:hover {
-  color: #1C2E5B;
+  color: #487367;
 }
 
 .container-fluid {
@@ -3925,7 +3929,7 @@ body .is-layout-constrained > .wp-block-group {
   left: 0px;
   top: 0px;
 }
-.innerHero .alert-left a {
+.innerHero .alert-left > a {
   background: #FFC700;
   color: #000;
   font-weight: 700;
@@ -3935,7 +3939,7 @@ body .is-layout-constrained > .wp-block-group {
   font-size: 16px;
   border-radius: 0px 5px 5px 0px;
 }
-.innerHero .alert-left a img {
+.innerHero .alert-left > a img {
   margin-right: 5px;
 }
 .innerHero .alert {
@@ -4669,6 +4673,37 @@ body .is-layout-constrained > .wp-block-group {
   right: 5px;
 }
 
+.fare_table {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.fare_table th {
+  border-right: 1px solid #487367;
+  background: #B2C4C4;
+  padding: 16px 16px;
+  text-align: center;
+  font-size: 14px;
+}
+.fare_table thead th:nth-child(2) {
+  min-width: 160px;
+}
+.fare_table tbody th {
+  border-bottom: 1px solid #487367;
+  text-align: left;
+}
+.fare_table td {
+  background: #F4F4F4;
+  font-size: 14px;
+  text-align: center;
+  padding: 10px 5px;
+  line-height: 26px;
+  border-right: 1px solid #c3c3c3;
+  border-bottom: 1px solid #c3c3c3;
+}
+.fare_table td span {
+  color: #9C2024;
+}
+
 .tooltip-inner {
   background-color: #004B8F;
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1607843137);
@@ -4784,36 +4819,36 @@ body .is-layout-constrained > .wp-block-group {
 }
 
 .modal-alert .modal-dialog {
-  max-width: 750px;
+  max-width: 700px;
   min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: auto;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 768px) {
   .modal-alert .modal-dialog {
     min-height: calc(100vh - 20px);
+    max-width: calc(100vw - 20px);
   }
 }
 .modal-alert .modal-alert-info {
-  padding: 25px 25px;
+  padding: 32px;
   position: relative;
   background: #F4F4F4;
+  border-radius: 10px;
 }
 .modal-alert .modal-alert-info .close {
   position: absolute;
-  right: 5px;
+  right: 15px;
   top: 5px;
   opacity: 1;
 }
-.modal-alert .modal-alert-info .close:hover {
-  filter: brightness(0) saturate(100%) invert(27%) sepia(79%) saturate(6468%) hue-rotate(152deg) brightness(98%) contrast(103%);
-  opacity: 1;
+.modal-alert .modal-alert-info h2 {
+  font-size: 42px;
 }
 .modal-alert .modal-content {
-  border-radius: 0px;
+  border-radius: 10px;
   border: 0;
 }
 .modal-alert .modal-body {
@@ -4829,6 +4864,7 @@ body .is-layout-constrained > .wp-block-group {
 
 .alertsWrap {
   padding-bottom: 60px;
+  padding-top: 40px;
 }
 .alertsWrap .container {
   max-width: 1200px;
@@ -4836,6 +4872,19 @@ body .is-layout-constrained > .wp-block-group {
 .alertsWrap .filter_top {
   max-width: 340px;
   margin-bottom: 40px;
+}
+@media (max-width: 768px) {
+  .alertsWrap .filter_top {
+    max-width: 100%;
+  }
+}
+.alertsWrap .col_right {
+  padding-top: 30px;
+}
+@media (max-width: 768px) {
+  .alertsWrap .col_right {
+    padding-top: 0px;
+  }
 }
 
 .alertBlocks {
@@ -4847,7 +4896,7 @@ body .is-layout-constrained > .wp-block-group {
 }
 .service_acco .accordion_bk {
   margin-bottom: 10px;
-  background: #F4F4F4;
+  border-bottom: 1px solid #487367;
 }
 .service_acco .main_acco_sv {
   border: 0;
@@ -4857,18 +4906,32 @@ body .is-layout-constrained > .wp-block-group {
   cursor: pointer;
 }
 .service_acco .main_acco_sv h3 {
-  font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.service_acco .main_acco_sv h3 span {
+  width: 40px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8px;
 }
 .service_acco .main_acco_sv h4 {
-  font-size: 16px;
+  font-size: 18px;
+  text-transform: none;
   font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
 .service_acco .main_acco_sv h5 {
   font-weight: normal;
   font-family: "Montserrat", sans-serif;
   font-weight: normal;
   margin-bottom: 0px;
+  font-size: 18px;
+  text-transform: none;
 }
 .service_acco .main_acco_sv h6 {
   margin-bottom: 10px;
@@ -4876,9 +4939,12 @@ body .is-layout-constrained > .wp-block-group {
 .service_acco .main_acco_sv.active .accosign img {
   transform: rotate(180deg);
 }
-.service_acco .main_acco_sv:hover h3 {
-  color: #1C2E5B;
+.service_acco .main_acco_sv:hover h3 strong {
+  color: #334731;
   text-decoration: underline;
+}
+.service_acco .main_acco_sv:hover .accosign img {
+  filter: brightness(0) saturate(100%) invert(23%) sepia(13%) saturate(1034%) hue-rotate(67deg) brightness(96%) contrast(89%);
 }
 .service_acco .accosign {
   position: absolute;
@@ -4892,9 +4958,6 @@ body .is-layout-constrained > .wp-block-group {
 .service_acco .acco_panel_sv {
   display: none;
   padding: 0px 22px 22px 22px;
-}
-.service_acco .acco_panel_sv p {
-  font-weight: 500;
 }
 .service_acco .acco_panel_sv p:last-of-type:last-child {
   margin-bottom: 5px;

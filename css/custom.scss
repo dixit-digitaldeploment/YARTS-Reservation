@@ -76,6 +76,9 @@ body {
     &.body_trip_result {
         background: linear-gradient(180deg, #FFFBEF 0%, #E2EFFF 100%);
     }
+    &.page-template-template-alerts {
+        background: linear-gradient(180deg, #FFFBEF 13.84%, #E2EFFF 100%);
+    }
 }
 
 html {
@@ -198,16 +201,17 @@ strong {
 
 //general rules
 .link {
-    font-size: 16px;
-    font-weight: 600;
+    font-size: 18px;
+    font-weight: 700;
     display: flex;
     align-items: center;
+    color: $secondary;
     img {
         max-width: 18px;
         margin-left: 6px;
     }
     &:hover {
-        color: $primary;
+        color: #487367;
     }
 }
 
@@ -4192,7 +4196,7 @@ body .is-layout-constrained>.wp-block-group {
         position: absolute;
         left: 0px;
         top: 0px;
-        a {
+        >a {
             background: #FFC700;
             color: #000;
             font-weight: 700;
@@ -4952,6 +4956,45 @@ body .is-layout-constrained>.wp-block-group {
     }
 }
 
+//Fares Table
+.fare_table {
+    width: 100%;
+    margin-bottom: 20px;
+    th {
+        border-right: 1px solid #487367;
+        background: #B2C4C4;
+        padding: 16px 16px;
+        text-align: center;
+        font-size: 14px;
+    }
+    thead {
+        th {
+            &:nth-child(2) {
+                min-width: 160px;
+            }
+        }
+    }
+    tbody {
+        th {
+            border-bottom: 1px solid #487367;
+            text-align: left;
+        }
+    }
+    td {
+        background: $lightgray;
+        font-size: 14px;
+        text-align: center;
+        padding: 10px 5px;
+        line-height: 26px;
+        border-right: 1px solid #c3c3c3;
+        border-bottom: 1px solid #c3c3c3;
+        span {
+            color: #9C2024;
+            ;
+        }
+    }
+}
+
 .tooltip-inner {
     background-color: $blue;
     box-shadow: 0px 0px 3px #00000029;
@@ -5069,34 +5112,34 @@ body .is-layout-constrained>.wp-block-group {
 
 .modal-alert {
     .modal-dialog {
-        max-width: 750px;
+        max-width: 700px;
         min-height: calc(100vh - 60px);
         display: flex;
         flex-direction: column;
         justify-content: center;
         overflow: auto;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
         @media (max-width: 768px) {
             min-height: calc(100vh - 20px);
+            max-width: calc(100vw - 20px);
         }
     }
     .modal-alert-info {
-        padding: 25px 25px;
+        padding: 32px;
         position: relative;
         background: $lightgray;
+        border-radius: 10px;
         .close {
             position: absolute;
-            right: 5px;
+            right: 15px;
             top: 5px;
             opacity: 1;
-            &:hover {
-                filter: brightness(0) saturate(100%) invert(27%) sepia(79%) saturate(6468%) hue-rotate(152deg) brightness(98%) contrast(103%);
-                opacity: 1;
-            }
+        }
+        h2 {
+            font-size: 42px;
         }
     }
     .modal-content {
-        border-radius: 0px;
+        border-radius: 10px;
         border: 0;
     }
     .modal-body {
@@ -5114,12 +5157,22 @@ body .is-layout-constrained>.wp-block-group {
 //Service Alerts
 .alertsWrap {
     padding-bottom: 60px;
+    padding-top: 40px;
     .container {
         max-width: 1200px;
     }
     .filter_top {
         max-width: 340px;
         margin-bottom: 40px;
+        @include md {
+            max-width: 100%;
+        }
+    }
+    .col_right {
+        padding-top: 30px;
+        @include md {
+            padding-top: 0px;
+        }
     }
 }
 
@@ -5131,7 +5184,7 @@ body .is-layout-constrained>.wp-block-group {
     padding-top: 10px;
     .accordion_bk {
         margin-bottom: 10px;
-        background: $lightgray;
+        border-bottom: 1px solid #487367;
     }
     .main_acco_sv {
         border: 0;
@@ -5140,18 +5193,30 @@ body .is-layout-constrained>.wp-block-group {
         padding-right: 45px;
         cursor: pointer;
         h3 {
-            font-size: 16px;
-            @include mont;
+            font-size: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            span {
+                width: 40px;
+                height: 42px;
+                @include all;
+                margin-left: 8px;
+            }
         }
         h4 {
-            font-size: 16px;
+            font-size: 18px;
+            text-transform: none;
             @include mont;
+            font-weight: 700;
         }
         h5 {
             font-weight: normal;
             @include mont;
             font-weight: normal;
             margin-bottom: 0px;
+            font-size: 18px;
+            text-transform: none;
         }
         h6 {
             margin-bottom: 10px;
@@ -5165,8 +5230,15 @@ body .is-layout-constrained>.wp-block-group {
         }
         &:hover {
             h3 {
-                color: $primary;
-                text-decoration: underline;
+                strong {
+                    color: $secondary;
+                    text-decoration: underline;
+                }
+            }
+            .accosign {
+                img {
+                    filter: brightness(0) saturate(100%) invert(23%) sepia(13%) saturate(1034%) hue-rotate(67deg) brightness(96%) contrast(89%);
+                }
             }
         }
     }
@@ -5182,9 +5254,7 @@ body .is-layout-constrained>.wp-block-group {
     .acco_panel_sv {
         display: none;
         padding: 0px 22px 22px 22px;
-        p {
-            font-weight: 500;
-        }
+        p {}
         p:last-of-type:last-child {
             margin-bottom: 5px;
         }

@@ -84,3 +84,7 @@
 @mixin img-black {
     filter: brightness(0) saturate(100%) invert(1%) sepia(77%) saturate(1660%) hue-rotate(166deg) brightness(90%) contrast(102%);
 }
+
+@mixin img-green {
+    filter: brightness(0) saturate(100%) invert(23%) sepia(13%) saturate(1034%) hue-rotate(67deg) brightness(96%) contrast(89%);
+}
