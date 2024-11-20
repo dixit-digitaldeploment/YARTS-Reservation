@@ -134,28 +134,8 @@
     max-width: 100%;
     margin-left: 0;
   }
-  .rp_content ul li {
-    flex-wrap: wrap;
-  }
-  .rp_content ul li a {
-    width: 100%;
-  }
-  .rp_content ul li .category {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-  }
   .slider_info {
     padding-top: 20px;
-  }
-  .contact_wraper .contact-row .ct_right {
-    padding-right: 0px;
-  }
-  .proc_wrap .proc_filter {
-    display: block;
-  }
-  .accoRt_block .rtTitle h4 {
-    align-items: flex-start;
   }
   .rtNo {
     min-width: 22px;
@@ -168,9 +148,6 @@
   }
   .wp-embed-responsive .wp-has-aspect-ratio iframe {
     position: static !important;
-  }
-  .meetingRow {
-    min-height: 100px;
   }
   .newsimg img {
     height: auto;
@@ -230,9 +207,6 @@
   }
   .main_search_content .search_box .probox {
     min-width: 100%;
-  }
-  .signup_alerts_news form {
-    display: block;
   }
   .filterWrap form {
     display: block !important;
@@ -318,11 +292,6 @@
   .main_acco_title .acco_title_info {
     padding-left: 15px;
     padding-right: 15px;
-  }
-  .meeting-wraper .agd_filter .filter_left,
-  .meeting-wraper .agd_filter .filter_right {
-    display: block;
-    width: 100%;
   }
   .rt-modal .rt-modal-info {
     padding-left: 20px;
@@ -437,12 +406,6 @@
   .topTitle.text-left {
     text-align: center !important;
     justify-content: center;
-  }
-  .more-detail {
-    display: block;
-  }
-  .more-detail .link {
-    margin-bottom: 20px;
   }
   .expanding-grid .links > li {
     width: 100%;
