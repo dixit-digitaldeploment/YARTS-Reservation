@@ -6,21 +6,21 @@
 }
 
 @mixin mont {
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 @mixin zume {
-    font-family: 'Zuume';
+    font-family: "Zuume";
     font-weight: bold;
 }
 
 @mixin zume-semi {
-    font-family: 'Zuume';
+    font-family: "Zuume";
     font-weight: 600;
 }
 
 @mixin zume-medium {
-    font-family: 'Zuume';
+    font-family: "Zuume";
     font-weight: 500;
 }
 
@@ -82,9 +82,19 @@
 }
 
 @mixin img-black {
-    filter: brightness(0) saturate(100%) invert(1%) sepia(77%) saturate(1660%) hue-rotate(166deg) brightness(90%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(1%) sepia(77%) saturate(1660%) hue-rotate(166deg) brightness(90%)
+        contrast(102%);
 }
 
 @mixin img-green {
-    filter: brightness(0) saturate(100%) invert(23%) sepia(13%) saturate(1034%) hue-rotate(67deg) brightness(96%) contrast(89%);
+    filter: brightness(0) saturate(100%) invert(23%) sepia(13%) saturate(1034%) hue-rotate(67deg) brightness(96%)
+        contrast(89%);
+}
+
+@mixin meta {
+    font-family: Montserrat;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
