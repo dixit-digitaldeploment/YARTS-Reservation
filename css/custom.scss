@@ -7406,6 +7406,7 @@ span.high_text {
 
 // css for reservation System
 .trips {
+  display: inline-block;
   .trip {
     padding: 21px;
     display: flex;
@@ -7446,6 +7447,9 @@ span.high_text {
         color: #8f0000;
       }
     }
+    .btn_sm{
+      width: max-content;
+    }
     @include lg {
       flex-wrap: wrap;
       flex-direction: column;
@@ -7457,6 +7461,7 @@ span.high_text {
     }
   }
 }
+
 .schedule-trip {
   padding: 64px 0;
   h2 {
@@ -7604,4 +7609,8 @@ span.high_text {
   @include md {
     padding: 40px 0;
   }
+}
+
+.selected-departure{
+  margin-bottom: 32px;
 }
