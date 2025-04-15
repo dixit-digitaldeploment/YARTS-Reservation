@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Yarts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link href="css/owl.carousel.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+</head>
+
+<body class="home">
+    <header class="main_header">
+        <div class="navbar navbar-expand-xl  ">
+            <div class="container-fluid">
+                <div class="logo_wrap">
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                    aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar top"></span>
+                    <span class="icon-bar midlde"></span>
+                    <span class="icon-bar last"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <div class="nav_bottom  ">
+                        <ul class="navbar-nav ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="#">Routes and Schedules</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Tickets and Fares</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#"> Events Calendar </a> </li>
+                                    <li><a href="#"> District News </a> </li>
+                                    <li><a href="#"> How To’s, Guides And Webinars </a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Plan Your Trip</a>
+                            </li>
+                            <li class="nav-item cart">
+                                <a class="nav-link" href="#"> Cart </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main_body">
+        <h1 class="visually-hidden">YARTS Reservation System</h1>
+        <div class="main_breadcrumb">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="#"> Home</a>
+                        </li>
+                        <li class="breadcrumb-item"><a href="#">page title </a></li>
+                        <li class="breadcrumb-item"><a href="#">page title </a></li>
+                        <li class="breadcrumb-item active" aria-current="page">page title</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <div class="schedule-trip">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2 class="text-center">Schedule Your Trip</h2>
+                        <div class="trip_form_wrapper">
+                            <h3 class="h4">BUY TICKET</h3>
+                            <form action="">
+                                <div class="">
+                                    <label class="title" for="from">From</label>
+                                    <select class="form-control" name="from" id="from">
+                                        <option value="">Select Origin</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label class="title" for="to">To</label>
+                                    <select class="form-control" name="to" id="to">
+                                        <option value="">Select Destination</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="">
+                                    <label class="title" for="Departure_Date">Departure Date</label>
+                                    <input name="Departure_Date" type="date" class="form-control">
+                                </div>
+                                <div class="">
+                                    <label class="title" for="Return_Date">Return Date (Optional)</label>
+                                    <input name="Return_Date" type="date" class="form-control">
+                                </div>
+                                <div class="">
+                                    <input type="submit" value="Edit Search" />
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="selected-departure">
+                            <div class="trips">
+                                <div class="trip">
+                                    <img src="./img/banner.png" alt="trip_image">
+                                    <div>
+                                        <h4 class="h5">Run 140-1</h4>
+                                        <p class="meta">This run operates Thursday-Monday</p>
+                                    </div>
+                                    <div class="departureBox">
+                                        <p>
+                                            <span class="meta title">Departure</span>
+                                            <span class="meta">Merced Transpo
+                                                <b>4:45AM</b>
+                                            </span>
+                                        </p>
+                                        <p>
+                                            <span class="meta title">Arrival</span>
+                                            <span class="meta">Yosemite Village
+                                                <b>7:26AM</b>
+                                            </span>
+                                        </p>
+                                        <span class="meta">Duration:
+                                            <b>2h 30 min</b>
+                                    </div>
+                                    <div>
+                                        <p>
+                                            <span class="meta title">Route</span>
+                                            <span class="meta">Merced Hwy 140</span>
+                                        </p>
+                                    </div>
+                                    <div class="seats">
+                                        <p>
+                                            <span class="meta title">Seats Available</span>
+                                            <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                        </p>
+                                    </div>
+                                    <div class="fare">
+                                        <p>
+                                            <span class="meta title">Fare</span>
+                                            <span class="meta">$20.00</span>
+                                        </p>
+                                    </div>
+                                    <div>
+                                        <button class="btn_sm">
+                                            Select
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item h5" role="presentation">
+                                <a class="nav-link active" id="id1" data-toggle="tab" href="#tabpanel1" role="tab"
+                                    aria-controls="tabpanel1" aria-selected="true">March 11, 2025</a>
+                            </li>
+                            <li class="nav-item h5" role="presentation">
+                                <a class="nav-link" id="id2" data-toggle="tab" href="#tabpanel1" role="tab"
+                                    aria-controls="tabpanel1" aria-selected="true">March 11, 2025</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="tab-content">
+                            <div class="tab-pane active" id="tabpanel1" role="tabpanel" aria-labelledby="id1">
+                                <h3 class="h4">Departure TriP</h3>
+                                <div class="trips">
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="tabpanel2" role="tabpanel" aria-labelledby="id2">
+                                <h3 class="h4">Departure TriP</h3>
+                                <div class="trips">
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="trip">
+                                        <img src="./img/banner.png" alt="trip_image">
+                                        <div>
+                                            <h4 class="h5">Run 140-1</h4>
+                                            <p class="meta">This run operates Thursday-Monday</p>
+                                        </div>
+                                        <div class="departureBox">
+                                            <p>
+                                                <span class="meta title">Departure</span>
+                                                <span class="meta">Merced Transpo
+                                                    <b>4:45AM</b>
+                                                </span>
+                                            </p>
+                                            <p>
+                                                <span class="meta title">Arrival</span>
+                                                <span class="meta">Yosemite Village
+                                                    <b>7:26AM</b>
+                                                </span>
+                                            </p>
+                                            <span class="meta">Duration:
+                                                <b>2h 30 min</b>
+                                        </div>
+                                        <div>
+                                            <p>
+                                                <span class="meta title">Route</span>
+                                                <span class="meta">Merced Hwy 140</span>
+                                            </p>
+                                        </div>
+                                        <div class="seats">
+                                            <p>
+                                                <span class="meta title">Seats Available</span>
+                                                <span class="meta fewseats">Book now! Less than 10 seats left!</span>
+                                            </p>
+                                        </div>
+                                        <div class="fare">
+                                            <p>
+                                                <span class="meta title">Fare</span>
+                                                <span class="meta">$20.00</span>
+                                            </p>
+                                        </div>
+                                        <div>
+                                            <button class="btn_sm">
+                                                Select
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer ">
+        <div class="footer-content">
+            <div class="container-fluid ">
+                <div class="footer-row row ">
+                    <div class="foot_col col1 ">
+                        <div class="foo_info">
+                            <p>
+                                <a href="#"><img src="img/location_on.svg" alt="location_on"> 357 W 18th St, <br>
+                                    Merced, CA 95340 </a>
+                            </p>
+                            <p>
+                                <a href="#"><img src="img/call.svg" alt="location_on"> (877) 989-2787</a>
+                            </p>
+                            <p>
+                                <a href="#"><img src="img/mail.svg" alt="location_on"> tickets@yarts.com</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="foot_col col2   ">
+                        <div class="foot_logo ">
+                            <img src="img/logo.svg " alt="logo ">
+                        </div>
+                        <div class="foot_media ">
+                            <ul>
+                                <li>
+                                    <a href=""><img src="img/Facebook.svg" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/Instagram.svg" alt=""> </a>
+                                </li>
+                                <li>
+                                    <a href=""><img src="img/twitter.svg" alt=""> </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="foot_col col3  ">
+                        <div class="footmenu ">
+                            <h3>Quick Links</h3>
+                            <ul class=" ">
+                                <li> <a href="# ">Do Business with YARTS</a> </li>
+                                <li> <a href="# ">Title VI Policy</a></li>
+                                <li> <a href="# ">Developers GTFS Data </a></li>
+                                <li> <a href="# ">Media Kit</a></li>
+                                <li> <a href="# ">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright ">
+                    <ul>
+                        <li><a href="#">Site map</a></li>
+                        <li><a href="#">Site Policy</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/jquery.js "></script>
+    <script src="js/popper.js "></script>
+    <script src="js/bootstrap.js "></script>
+    <script src="js/expand.js "></script>
+    <script src="js/owl.carousel.min.js "></script>
+    <script src="js/owlmain.js "></script>
+    <script>
+        $(document).on("scroll ", function () {
+            if ($(document).scrollTop() > 0) {
+                $(".main_header ").addClass("shrink ");
+
+            } else {
+                $(".main_header ").removeClass("shrink ");
+
+            }
+        });
+    </script>
+</body>
+
+</html>

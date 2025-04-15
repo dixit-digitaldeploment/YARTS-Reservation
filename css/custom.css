@@ -6974,6 +6974,64 @@ span.high_text {
   margin-top: 10px;
 }
 
+.trips .trip {
+  padding: 21px;
+  display: flex;
+  gap: 24px;
+  border: 1px solid #c3c3c3;
+  background: #f4f4f4;
+  margin-bottom: 8px;
+}
+.trips .trip .departureBox {
+  flex: 0 0 212px;
+}
+.trips .trip .seats {
+  flex: 0 0 142px;
+}
+.trips .trip .fare {
+  flex: 0 0 100px;
+}
+.trips .trip > img {
+  width: 107px;
+  height: 100px;
+  aspect-ratio: 107/100;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.trips .trip .h5 {
+  color: #1c2e5b;
+}
+.trips .trip .meta {
+  font-family: Montserrat;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #000;
+  display: block;
+}
+.trips .trip .meta span {
+  display: block;
+}
+.trips .trip .meta.title {
+  color: #1C2E5B;
+  font-weight: 700;
+}
+.trips .trip .meta.fewseats {
+  color: #8f0000;
+}
+@media (max-width: 992px) {
+  .trips .trip {
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .trips .trip > * {
+    flex: 0 0 100% !important;
+    width: 100%;
+  }
+}
+
 .schedule-trip {
   padding: 64px 0;
 }
@@ -7052,10 +7110,10 @@ span.high_text {
   color: inherit !important;
 }
 .schedule-trip .nav-tabs > li:hover {
-  background: #B2C4C4;
+  background: #b2c4c4;
 }
 .schedule-trip .nav-tabs > li:has(.active) {
-  background: #1C2E5B;
+  background: #1c2e5b;
   color: #fff;
 }
 .schedule-trip .tab-content .h4 {
@@ -7088,7 +7146,7 @@ span.high_text {
      object-fit: cover;
 }
 .schedule-trip .tab-content .trips .trip .h5 {
-  color: #1C2E5B;
+  color: #1c2e5b;
 }
 .schedule-trip .tab-content .trips .trip .meta {
   font-family: Montserrat;
@@ -7107,7 +7165,7 @@ span.high_text {
   font-weight: 700;
 }
 .schedule-trip .tab-content .trips .trip .meta.fewseats {
-  color: #8F0000;
+  color: #8f0000;
 }
 @media (max-width: 992px) {
   .schedule-trip .tab-content .trips .trip {

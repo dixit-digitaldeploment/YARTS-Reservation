@@ -7405,6 +7405,58 @@ span.high_text {
 }
 
 // css for reservation System
+.trips {
+  .trip {
+    padding: 21px;
+    display: flex;
+    gap: 24px;
+    border: 1px solid #c3c3c3;
+    background: #f4f4f4;
+    margin-bottom: 8px;
+    .departureBox {
+      flex: 0 0 212px;
+    }
+    .seats {
+      flex: 0 0 142px;
+    }
+    .fare {
+      flex: 0 0 100px;
+    }
+    > img {
+      width: 107px;
+      height: 100px;
+      aspect-ratio: 107/100;
+      object-fit: cover;
+    }
+    .h5 {
+      color: #1c2e5b;
+    }
+    .meta {
+      @include meta;
+      color: #000;
+      display: block;
+      span {
+        display: block;
+      }
+      &.title {
+        color: $primary;
+        font-weight: 700;
+      }
+      &.fewseats {
+        color: #8f0000;
+      }
+    }
+    @include lg {
+      flex-wrap: wrap;
+      flex-direction: column;
+      gap: 8px;
+      > * {
+        flex: 0 0 100% !important;
+        width: 100%;
+      }
+    }
+  }
+}
 .schedule-trip {
   padding: 64px 0;
   h2 {
@@ -7481,11 +7533,11 @@ span.high_text {
         border: none !important;
         color: inherit !important;
       }
-      &:hover{
-        background: #B2C4C4;
+      &:hover {
+        background: #b2c4c4;
       }
-      &:has(.active){
-        background: #1C2E5B;
+      &:has(.active) {
+        background: #1c2e5b;
         color: #fff;
       }
     }
@@ -7501,50 +7553,50 @@ span.high_text {
         padding: 21px;
         display: flex;
         gap: 24px;
-        border: 1px solid  #c3c3c3;
-        background:  #f4f4f4;
+        border: 1px solid #c3c3c3;
+        background: #f4f4f4;
         margin-bottom: 8px;
-        .departureBox{
+        .departureBox {
           flex: 0 0 212px;
         }
-        .seats{
+        .seats {
           flex: 0 0 142px;
         }
-        .fare{
+        .fare {
           flex: 0 0 100px;
         }
-        >img{
+        > img {
           width: 107px;
           height: 100px;
           aspect-ratio: 107/100;
           object-fit: cover;
         }
-        .h5{
-          color: #1C2E5B;
+        .h5 {
+          color: #1c2e5b;
         }
-        .meta{
+        .meta {
           @include meta;
           color: #000;
           display: block;
-          span{
+          span {
             display: block;
           }
-          &.title{
+          &.title {
             color: $primary;
             font-weight: 700;
           }
-          &.fewseats{
-            color: #8F0000;
+          &.fewseats {
+            color: #8f0000;
           }
         }
-        @include lg{
+        @include lg {
           flex-wrap: wrap;
           flex-direction: column;
           gap: 8px;
-         >*{
-          flex: 0 0 100% !important;
-          width: 100%;
-         }
+          > * {
+            flex: 0 0 100% !important;
+            width: 100%;
+          }
         }
       }
     }
